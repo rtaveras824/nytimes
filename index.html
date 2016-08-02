@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NY Times Search</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>New York Times Search</h1>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h2 class="panel-title">Search Form</h2>
+			</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<label for="searchTerm">Search Term:</label>
+					<input type="text" class="form-control" id="searchTerm">
+
+					<label for="numberRecords">Number of Records to Retrieve:</label>
+					<br>
+					<select name="numArticles" class="form-control">
+					  <option value="1">1</option>
+					  <option value="5" selected>5</option>
+					  <option value="10">10</option>
+					
+					</select>
+
+					<label for="startYear">Start Year (Optional):</label>
+					<input type="text" class="form-control" id="startYear">
+					<label for="endYear">End Year (Optional):</label>
+					<input type="text" class="form-control" id="endYear">
+					<button class="btn btn-default" type="submit" id="submit">Search</button>
+					<button class="btn btn-default" type="submit" id="clearResults">ClearResults</button>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Top Articles</h3>
+			</div>
+			<div class="panel-body">
+				<div id="results">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="assets/javascript/bootstrap.min.js"></script>
+</body>
+</html>
